@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Main menu</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_1">
+       <attribute name="title">
+        <string>sys_integrator</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_22">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Search:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" colspan="5">
+         <widget class="QLineEdit" name="lineEditSearch_1"/>
+        </item>
+        <item row="0" column="6" colspan="2">
+         <widget class="QComboBox" name="SearchcomboBox">
+          <item>
+           <property name="text">
+            <string>last_name</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>first_name</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>job_title</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>phone_number</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>salary</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>id_project</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>id_company</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="8">
+         <widget class="QPushButton" name="pushButton_11">
+          <property name="text">
+           <string>Find</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="9">
+         <widget class="QTableView" name="SysTableView"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>project id</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QSpinBox" name="spinBox_11"/>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>   last name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="4">
+         <widget class="QLineEdit" name="lineEdit_11"/>
+        </item>
+        <item row="2" column="5" colspan="2">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>     phone number</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="7">
+         <widget class="QLineEdit" name="lineEdit_14"/>
+        </item>
+        <item row="2" column="8">
+         <widget class="QPushButton" name="pushButton_1">
+          <property name="text">
+           <string>Insert</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>company id</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QSpinBox" name="spinBox_12"/>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>   first name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="4">
+         <widget class="QLineEdit" name="lineEdit_12"/>
+        </item>
+        <item row="3" column="5">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>     salary</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="7">
+         <widget class="QLineEdit" name="lineEdit_15"/>
+        </item>
+        <item row="4" column="0" colspan="4">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>                                             job title</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QLineEdit" name="lineEdit_13"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>company</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="5">
+         <widget class="QTableView" name="CompanyTableView"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>name comapny</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_21"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>phone</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_23"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="text">
+           <string>insert</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>address company</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_22"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>projects</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0" colspan="7">
+         <widget class="QTableView" name="ProjectTableView"/>
+        </item>
+        <item row="1" column="1" rowspan="2">
+         <widget class="QSpinBox" name="spinBox_31"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>name project</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3" rowspan="2">
+         <widget class="QLineEdit" name="lineEdit_31"/>
+        </item>
+        <item row="1" column="4" rowspan="2">
+         <widget class="QLabel" name="label_17">
+          <property name="text">
+           <string>date project</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5" rowspan="2">
+         <widget class="QDateEdit" name="dateEdit_3"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>techno id</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QSpinBox" name="spinBox_32"/>
+        </item>
+        <item row="3" column="2">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>status project</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QLineEdit" name="lineEdit_32"/>
+        </item>
+        <item row="3" column="5">
+         <widget class="QPushButton" name="pushButton_3">
+          <property name="text">
+           <string>insert</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="2">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>client id</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>technologies</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0" colspan="7">
+         <widget class="QTableView" name="TechnoTableView"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>name techno</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_41"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>info techno</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_42"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_18">
+          <property name="text">
+           <string>degree complexity</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QSpinBox" name="spinBox_41"/>
+        </item>
+        <item row="1" column="6">
+         <widget class="QPushButton" name="pushButton_4">
+          <property name="text">
+           <string>insert</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>clients</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0" colspan="7">
+         <widget class="QTableView" name="ClientTableView"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_19">
+          <property name="text">
+           <string>last name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_51"/>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_20">
+          <property name="text">
+           <string>first name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="lineEdit_52"/>
+        </item>
+        <item row="1" column="4">
+         <widget class="QLabel" name="label_21">
+          <property name="text">
+           <string>phone</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="5">
+         <widget class="QLineEdit" name="lineEdit_53"/>
+        </item>
+        <item row="1" column="6">
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="text">
+           <string>insert</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>812</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionConnect"/>
+    <addaction name="actionNew_Window"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_programm"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit and Calculation</string>
+    </property>
+    <addaction name="actionDelete"/>
+    <addaction name="action_Amount_of_salaries"/>
+    <addaction name="action_Project_Completion"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="actionAbout_programm">
+   <property name="text">
+    <string>About author</string>
+   </property>
+  </action>
+  <action name="actionDelete">
+   <property name="text">
+    <string>Delete</string>
+   </property>
+  </action>
+  <action name="actionNew_Window">
+   <property name="text">
+    <string>New Windows</string>
+   </property>
+  </action>
+  <action name="action_Amount_of_salaries">
+   <property name="text">
+    <string>
+Amount of salaries</string>
+   </property>
+  </action>
+  <action name="action_Project_Completion">
+   <property name="text">
+    <string>
+Project Completion</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
